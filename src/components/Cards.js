@@ -1,5 +1,5 @@
 import {react, useState, useEffect}from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 
 export default function Cards(props) {
@@ -18,6 +18,8 @@ export default function Cards(props) {
             return(
             
                 <div class="Card">
+                    <Link to = {`/product/${product.id}`}>
+                    
                     <img src={product.image}></img>
                     <div class="product-details">
                         <div class="product-title">{product.title}</div>
@@ -27,6 +29,7 @@ export default function Cards(props) {
                         <div class="product-rating">{product.rating.rate}</div>
                         </div>
                     </div>
+                    </Link>
                 </div>
             )
         })}

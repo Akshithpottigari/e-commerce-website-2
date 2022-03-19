@@ -4,7 +4,7 @@ import Cards from './Cards'
 import Nav from './Nav'
 import Header from './Header'
 import Heading from './Heading.js'
-
+import Footer from './Footer.js'
 
 export default function Jewelery() {
 // const url = 'https://fakestoreapi.com/products/category/jewelery'
@@ -14,6 +14,7 @@ export default function Jewelery() {
     <Nav />
     <Heading props={{title: 'All in Jewelery'}} />
     <Cards props='https://fakestoreapi.com/products/category/jewelery' />
+    <Footer />
     </>
   )
 }
